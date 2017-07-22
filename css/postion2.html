@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position</title>
+  <!--
+
+  static 정적
+  relative 상대적 본인 스스로가 대상이 된다(사각형이면 왼쪽 윗꼭지점이 기준)
+  absolute 절대적 기준이 될만한 대상이 있어야 한다
+  fixed 고정적 화면이 기준이 되어 대상이 된다.
+
+
+
+-->
+
+  <style>
+
+  div {
+    border: 1px #ccc solid;
+    position: absolute;
+    background-image: url(../image/a.jpg);
+    background-size: cover;
+    background-position: center center;
+
+  }
+  .box1 {left:0; top: 0; right: 50%; bottom: 50%; background-color: #22741C;}
+  .box2 {left:50%; top: 0; right: 0%; bottom: 50%; background-color: #660033;}
+  .box3 {left:0; top: 50%; right: 50%; bottom: 0; background-color: #660033;}
+  .box4 {left:50%; top: 50%; right: 0%; bottom: 0; background-color: #22741C;}
+
+  </style>
+</head>
+<body>
+
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+</body>
+</html>
