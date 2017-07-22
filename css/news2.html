@@ -9,7 +9,8 @@
 
     ul{
       list-style: none;
-      padding: 0 0 0 10px;
+      padding: 0 0 0 0px;
+      margin: 0 0 0 0px;
     }
     li{
       padding: 0px;
@@ -20,21 +21,49 @@
         height: 540px;
         outline: 1px solid #ccc;
         margin: 0 auto;
-
       }
       .head {
         width:840px;
         height: 110px;
-        outline: 1px solid #ccc;
+        border-bottom: 3px solid #545454;
         margin: 0 30px;
+        display: inline-block;
       }
+
+        .headimg {
+          float: left;
+          margin: 10px 0;
+          }
+          .head_submit {
+            width: 320px;
+            clear: both;
+            display: block;
+            float: left;
+          }
+          .headimg2 {
+            float: right;
+            clear: both;
+            vertical-align: top;
+          }
+
+
+
+        .submit {
+          display: inline-block;
+          clear: both;
+        }
+
+      .head span{
+        font-size: 14px;
+      }
+
 
 
       .main {
 
         height: 380px;
-        outline: 1px solid #ccc;
-        margin:  30px;
+
+        margin:  25px 30px  ;
 
         clear: both;
 
@@ -43,9 +72,8 @@
       .main .left {
         width: 513px;
         height: 380px;
-        outline: 1px solid #ccc;
 
-        display: block;
+
         float: left;
 
       }
@@ -53,7 +81,7 @@
       .left_header{
             width: 513px;
             height: 150px;
-            outline: 1px solid #ccc;
+
             padding: 2px 0;
 
           }
@@ -106,13 +134,13 @@
              line-height: 70%;
 
            }
-           .left_main .lili{
+           .left_main .left_lili{
                  margin: 0 20px;
                  line-height: 15px;
                  float: left;
                }
 
-               .left_main .lili2{
+               .left_main .left_lili2{
                      line-height: 25px;
 
                    }
@@ -124,30 +152,43 @@
                .main .right {
                  width: 300px;
                  height: 380px;
-                outline: 1px solid #ccc;
+
                 float: right;
-
-
               }
 
              .right_header{
                width: 300px;
                height: 120px;
-               outline: 1px solid black;
-
+               background-color: #EAEAEA;
              }
 
 
-             .right_header .ul .li {
-               width: 300px;
+             .right_header .right_lili {
+               width: 290px;
                height: 25px;
                background-color: gray;
+               padding: 0 0 0 10px;
+               color: white;
+               font-weight: bold;
+               font-size: 15px;
+               padding-top: 5px;
+               letter-spacing: -1px;
+             }
+
+
+             .right_header .right_lili2{
+               list-style: disc;
+               font-size: 10px;
+               line-height: 100%;
+               font-size: 13px;
+               margin: 10px 0 0 25px;
+
              }
 
              .right_main{
                width: 300px;
-               height: 245px;
-               outline: 1px solid black;
+               height: 260px;
+
 
              }
 
@@ -156,36 +197,63 @@
              .r_m_1{
                width: 146.4px;
                height: 100px;
-               outline: 1px solid black;
                float: left;
                margin: 10px auto;
              }
+
+
+             .r_m_1 .img2 {
+                width: 100%;
+                float: left;
+                padding-top: 2px;
+                line-height: 70%;
+              }
 
              .r_m_2{
                width: 146.4px;
                height: 100px;
-               outline: 1px solid black;
                float: right;
                margin: 10px auto;
              }
 
+             .r_m_2 .img2 {
+                width: 100%;
+                float: left;
+                padding-top: 2px;
+                line-height: 70%;
+              }
              .r_m_3{
                width: 146.4px;
-               height: 100px;
-               outline: 1px solid black;
                float: left;
                margin: 15px auto;
              }
 
+             .r_m_3 .img2 {
+                width: 100%;
+                float: left;
+                padding-top: 2px;
+                line-height: 70%;
+              }
              .r_m_4{
                width: 146.4px;
-               height: 100px;
-               outline: 1px solid black;
                float: right;
                margin: 15px auto;
              }
 
+             .r_m_4 .img2 {
+                width: 100%;
+                float: left;
+                padding-top: 2px;
+                line-height: 70%;
+              }
 
+
+                .right_main span {
+                  display: block;
+                  font-size: 10px;
+                  line-height: 130%;
+                  margin: auto;
+                }
 
 
 
@@ -200,8 +268,14 @@
   <div class="head">
     <ul>
       <li>
-        <img src="http://static.naver.net/newsstand/up/2013/0813/nsd114836462.gif">
+        <img class="headimg" src="http://static.naver.net/newsstand/up/2013/0813/nsd114836462.gif"><br />
+          <div class="head_submit">
         <input type="submit" value="구독하기" />
+        <input type="submit" value="이용자 한마디" />
+        <input type="submit" value="뭐" />
+        <span> 07-16 16:4 편집</span>
+      </div>
+        <img class="headimg2" src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01485406525004.jpg" alt="">
     </ul>
   </div>
   <div class="main">
@@ -221,26 +295,26 @@
       <div class="left_main">
         <ul>
           <li>
-            <div class="lili">
+            <div class="left_lili">
               <img src="http://static.naver.net/newsstand/2017/0708/etnews/142544/002.jpg">
               <span> 중국서 불붙은 OLED 증착기 '韓日 대전'</span>
             </div>
           </li>
           <li>
-            <div class="lili">
+            <div class="left_lili">
               <img src="http://static.naver.net/newsstand/2017/0708/etnews/142544/003.jpg" alt="">
               <span>'갤럭시노트FE' 무제한 요금제 쓰</span>
             </div>
           </li>
-          <li class="lili2">
+          <li class="left_lili2">
             <strong>수면의자에 무료 이발…꿈의 직장 '구글'</strong></li>
-          <li class="lili2">한·미·일 정상 "북 압박 강화해야" 한목소리</li>
-          <li class="lili2">테슬라, 미국 자동차 시총 1위 GM에 내줬다</li>
-          <li class="lili2">KT “빅데이터로 감염병 예방”</li>
-          <li class="lili2">삼성전자 무선사업부, 배터리 개발 직접 챙긴다</li>
-          <li class="lili2"><strong>구글안드로이드페이 딜레마...국내 전용카</strong></li>
-          <li class="lili2">한·미·일 정상 "북 압박 강화해야" 한목소리</li>
-          <li class="lili2">KT 'AI 투트랙'···사업단 이어 연구소 가동 </li>
+          <li class="left_lili2">한·미·일 정상 "북 압박 강화해야" 한목소리</li>
+          <li class="left_lili2">테슬라, 미국 자동차 시총 1위 GM에 내줬다</li>
+          <li class="left_lili2">KT “빅데이터로 감염병 예방”</li>
+          <li class="left_lili2">삼성전자 무선사업부, 배터리 개발 직접 챙긴다</li>
+          <li class="left_lili2"><strong>구글안드로이드페이 딜레마...국내 전용카</strong></li>
+          <li class="left_lili2">한·미·일 정상 "북 압박 강화해야" 한목소리</li>
+          <li class="left_lili2">KT 'AI 투트랙'···사업단 이어 연구소 가동 </li>
 
         </ul>
       </div>
@@ -248,14 +322,32 @@
 
           <div class="right">
             <div class="right_header">
-            <ul>
-              <li>주요뉴스</li>
-            </ul> </div>
+              <ul>
+                <li class="right_lili"> 주요뉴스</li>
+              </ul>
+              <ul>
+                <li class="right_lili2">한국형 망 중립성 논의 시급</li>
+                <li class="right_lili2">車·철강업계 '당혹'…무역적자 원인 놓고 치열한 </li>
+                <li class="right_lili2">인텔 제온 스케일러블 프로세서의 혁신… 높은 </li>
+            </ul>
+           </div>
             <div class="right_main">
-              <div class="r_m_1"></div>
-              <div class="r_m_2"></div>
-              <div class="r_m_3"></div>
-              <div class="r_m_4"></div>
+              <div class="r_m_1">
+                <img class="img2" src="http://static.naver.net/newsstand/2017/0716/etnews/164347/004.jpg" alt="">
+                <span>러시아, 스타워즈 스톰트루퍼 닮은 최첨단 전투복 공개</span>
+              </div>
+              <div class="r_m_2">
+                <img class="img2" src="http://static.naver.net/newsstand/2017/0716/etnews/164347/006.jpg">
+                <span> 일본 해저 분화로 70㎢ 영해 확대 '횡재' </span>
+              </div>
+              <div class="r_m_3">
+                <img class="img2" src="http://static.naver.net/newsstand/2017/0716/etnews/164347/005.jpg" alt="">
+                <span>아이폰8 케이스 판매 돌입</span>
+              </div>
+              <div class="r_m_4">
+                <img class="img2" src="http://static.naver.net/newsstand/2017/0716/etnews/164347/007.jpg" alt="">
+                <span>한국에도 흔한 '라돈', 폐암에 피부암까지 유발한다.</span>
+              </div>
             </div>
           </div>
   </div>
